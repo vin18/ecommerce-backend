@@ -4,7 +4,7 @@
   "description": "Backend for eCommerce application built using Typescript, Mongoose, Express API server",
   "main": "server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=development npx ts-node src/server.ts"
   },
   "keywords": [
     "nodejs",
@@ -13,5 +13,17 @@
     "mongodb"
   ],
   "author": "Vinit Raut",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.5",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
 }

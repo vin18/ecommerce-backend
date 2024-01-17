@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import { NODE_ENV, PORT } from "./config";
+import { logger } from "./utils/logger";
 
 export class App {
   public app: express.Application;
@@ -15,10 +16,10 @@ export class App {
 
   public listen() {
     this.app.listen(this.port, () => {
-      console.log(`=================================`);
-      console.log(`======= ENV: ${this.env} =======`);
-      console.log(`🚀 App listening on the port ${this.port}`);
-      console.log(`=================================`);
+      logger.info(`=================================`);
+      logger.info(`======= ENV: ${this.env} =======`);
+      logger.info(`🚀 App listening on the port ${this.port}`);
+      logger.info(`=================================`);
     });
   }
 }

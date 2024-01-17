@@ -1,0 +1,17 @@
+{
+  "name": "ecommerce-backend",
+  "version": "1.0.0",
+  "description": "Backend for eCommerce application built using Typescript, Mongoose, Express API server",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "expressjs",
+    "mongodb"
+  ],
+  "author": "Vinit Raut",
+  "license": "ISC"
+}
